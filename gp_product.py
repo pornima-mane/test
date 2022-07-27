@@ -18,6 +18,7 @@ class GpProductReport(models.TransientModel):
 
     @api.multi
     def action_report(self,data):
+    	print("1111111111111111")
         workbook = xlwt.Workbook()
         column_heading_style = easyxf('font:height 200;font:bold True;align: horiz center;borders: top thin,bottom thin,left thin,right thin,top_color black, bottom_color black, right_color  black, left_color black;')
         column_heading_style_up = easyxf('font:height 200;font:bold True;align: horiz center;borders: top thin,bottom thin,left thin,right thin;')
